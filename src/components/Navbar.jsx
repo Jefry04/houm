@@ -1,12 +1,8 @@
 import React from "react";
-import {
-  Heading,
-  Flex,
-} from "@chakra-ui/react";
-
+import { Heading, Flex } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Navbar = () => {
-
   return (
     <Flex
       as="nav"
@@ -20,7 +16,7 @@ const Navbar = () => {
     >
       <Flex align="center" mr={5}>
         <Heading as="h1" size="lg" letterSpacing={"tighter"} color="#f4364c">
-          MUVI
+          <Link href="/">MUVI</Link>
         </Heading>
       </Flex>
     </Flex>
