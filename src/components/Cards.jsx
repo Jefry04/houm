@@ -2,9 +2,10 @@ import React from "react";
 import { Box, Image, Text, Stack, Heading, Link } from "@chakra-ui/react";
 
 const Cards = ({ moviesData }) => {
-  const { poster_path, title, release_date } = moviesData;
+  const { poster_path, title, release_date, id } = moviesData;
+
   return (
-    <Link href="/">
+    <Link href={`/${id}`}>
       <Box
         maxW="280px"
         maxH="520px"
@@ -16,36 +17,37 @@ const Cards = ({ moviesData }) => {
         cursor="pointer"
       >
         <Box
-          bg={"gray.100"}
+          bg="gray.100"
           mt={-6}
           mx={-6}
           mb={6}
-          pos={"relative"}
-          overflow={"hidden"}
+          pos="relative"
+          overflow="hidden"
         >
           <Image
             src={`https://image.tmdb.org/t/p/w300${poster_path}`}
             w="100%"
             h="100%"
             objectFit="cover"
-            alt={"Imagen de muestra"}
+            alt="Imagen de Pelicula"
+            fallbackSrc="https://via.placeholder.com/150"
           />
         </Box>
         <Stack>
           <Text
-            color="#f4364c"
-            textTransform={"uppercase"}
+            color="secondary"
+            textTransform="uppercase"
             fontWeight={800}
-            fontSize={"sm"}
+            fontSize="sm"
             letterSpacing={1.1}
           >
             {release_date?.slice(0, 4)}
           </Text>
           <Heading
-            color="#212121"
+            color="title"
             marginTop="0 !important"
-            fontSize={"medium"}
-            fontFamily={"body"}
+            fontSize="medium"
+            fontFamily="body"
           >
             {title}
           </Heading>

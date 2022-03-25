@@ -10,14 +10,14 @@ export const Search = () => {
   const handleInputChange = (event) => {
     setMovieSearch(event.target.value);
   };
-  const handleSearch = async (event) => {
+  const handleSearch = (event) => {
     event.preventDefault();
     router.push({
-        pathname: "/resultSearch",
-        query: {
-          query: movieSearch,
-        },
-      });
+      pathname: "/resultSearch",
+      query: {
+        query: movieSearch,
+      },
+    });
   };
 
   return (
@@ -34,7 +34,7 @@ export const Search = () => {
             onChange={handleInputChange}
           />
           <InputRightElement>
-            {<SearchIcon color="#f4364c" />}
+            <SearchIcon color="secondary" mt="4px" />
           </InputRightElement>
         </InputGroup>
       </form>

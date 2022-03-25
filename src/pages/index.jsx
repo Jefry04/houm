@@ -10,6 +10,7 @@ import { Filter } from "../components/Filter";
 import { Search } from "../components/Search";
 
 export default function Home() {
+
   return (
     <>
       <SimpleGrid
@@ -19,10 +20,10 @@ export default function Home() {
         justifyItems="center"
       >
         <Flex mt="16" flexDirection="column" alignItems="center" width="68%">
-          <Heading as="h2" size="xl" pb="4" color="#424242">
+          <Heading as="h2" size="xl" pb="4" color="title">
             BIENVENIDOS
           </Heading>
-          <Text fontSize="2xl" color="#616161" pb="8">
+          <Text fontSize="2xl" color="primary" pb="8">
             La mas completa base de datos de peliculas de internet, busca tu
             favorita
           </Text>
@@ -32,7 +33,7 @@ export default function Home() {
           <Box m="10px">
             <Filter />
           </Box>
-          <Text mt="16" fontSize="6xl" color="#f4364c">
+          <Text mt="16" fontSize="6xl" color="secondary">
             MUVI
           </Text>
         </Flex>

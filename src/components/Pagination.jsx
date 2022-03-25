@@ -9,7 +9,7 @@ export const Pagination = ({ page, total_pages, query }) => {
   return (
     <>
       <IconButton
-        color="#f4364c"
+        color="secondary"
         aria-label="Bacward pagination"
         icon={<ArrowBackIcon />}
         marginRight="6px"
@@ -23,7 +23,7 @@ export const Pagination = ({ page, total_pages, query }) => {
         disabled={page <= 1}
       />
       <IconButton
-        color="#f4364c"
+        color="secondary"
         aria-label="forward pagination"
         icon={<ArrowForwardIcon />}
         onClick={() => {
@@ -33,7 +33,7 @@ export const Pagination = ({ page, total_pages, query }) => {
             router.push(`?page=${page + 1}&query=${query}`);
           }
         }}
-        disabled={page >= 500 || page === total_pages} // 500 Porque es una restricciond de la API
+        disabled={page >= 500 || page === total_pages} // 500 It is an API restriction
       />
     </>
   );

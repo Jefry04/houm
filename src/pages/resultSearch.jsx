@@ -7,22 +7,30 @@ import { getMoviesData } from "../lib/getMoviesData";
 
 const ResultSearch = ({ searchResult, page, query }) => (
   <SimpleGrid maxWidth="1280px" m="auto" direction="column">
-    <Flex justifyContent="flex-end" p="4px">
-      <Pagination
-        page={page}
-        total_pages={searchResult.total_pages}
-        query={query}
-      />
-    </Flex>
-    <SimpleGrid
-      columns={{ sm: 2, md: 4 }}
-      spacing="40px"
-      justifyContent="center"
-    >
-      {searchResult?.results?.map((result) => (
-        <Cards moviesData={result} key={result.id} />
-      ))}
-    </SimpleGrid>
+    {searchResult?.results?.length > 0 ? (
+      <>
+        <Flex justifyContent="flex-end" p="4px">
+          <Pagination
+            page={page}
+            total_pages={searchResult.total_pages}
+            query={query}
+          />
+        </Flex>
+
+        <SimpleGrid
+          columns={{ sm: 2, md: 4 }}
+          spacing="40px"
+          justifyContent="center"
+        >
+          {searchResult?.results?.map((result) => (
+            <Cards moviesData={result} key={result.id} />
+          ))}
+        </SimpleGrid>
+      </>
+    ) : (
+      //TODO  aviso de que no se encontro resultado
+      <h1>NO hay resultado</h1>
+    )}
   </SimpleGrid>
 );
 

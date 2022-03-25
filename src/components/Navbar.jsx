@@ -15,7 +15,7 @@ const Navbar = () => {
       boxShadow="2xl"
     >
       <Flex align="center" mr={5}>
-        <Heading as="h1" size="lg" letterSpacing={"tighter"} color="#f4364c">
+        <Heading as="h1" size="lg" letterSpacing={"tighter"} color="secondary">
           <Link href="/">MUVI</Link>
         </Heading>
       </Flex>

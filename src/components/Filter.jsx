@@ -1,5 +1,5 @@
 import React from "react";
-import {  Button } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 
 export const Filter = () => {
@@ -8,15 +8,15 @@ export const Filter = () => {
       <Button
         m="4px"
         px={4}
-        fontSize={"sm"}
+        fontSize="sm"
         borderRadius="25px"
         bg="#FF452B"
-        color={"white"}
+        color="text"
         boxShadow={
           "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
         }
         _hover={{
-          bg: "rgb(178, 48, 30)",
+          bg: "hover",
         }}
       >
         <Link href={"/popular"}>
@@ -26,38 +26,32 @@ export const Filter = () => {
       <Button
         m="4px"
         px={4}
-        fontSize={"sm"}
+        fontSize="sm"
         borderRadius="25px"
         bg="#FF452B"
-        color={"white"}
+        color="text"
         boxShadow={
           "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
         }
         _hover={{
-          bg: "rgb(178, 48, 30)",
+          bg: "hover",
         }}
-        // _focus={{
-        //   bg: "blue.500",
-        // }}
       >
-        OTRAS
+        Otras
       </Button>
       <Button
         m="4px"
         px={4}
-        fontSize={"sm"}
+        fontSize="sm"
         borderRadius="25px"
         bg="#FF452B"
-        color={"white"}
+        color="text"
         boxShadow={
           "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
         }
         _hover={{
-          bg: "rgb(178, 48, 30)",
+          bg: "hover",
         }}
-        // _focus={{
-        //   bg: "blue.500",
-        // }}
       >
         latest movies
       </Button>
