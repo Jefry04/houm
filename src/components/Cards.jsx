@@ -1,7 +1,5 @@
-import { Box, Image, Text, Stack, Heading, Link } from "@chakra-ui/react";
-
-
 import React from "react";
+import { Box, Image, Text, Stack, Heading, Link } from "@chakra-ui/react";
 
 const Cards = ({ moviesData }) => {
   const { poster_path, title, release_date } = moviesData;

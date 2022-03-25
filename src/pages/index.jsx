@@ -1,16 +1,13 @@
 import React from "react";
 import {
-  Input,
   SimpleGrid,
   Box,
   Flex,
   Heading,
-  InputGroup,
-  InputRightElement,
   Text,
 } from "@chakra-ui/react";
 import { Filter } from "../components/Filter";
-import { SearchIcon } from "@chakra-ui/icons";
+import { Search } from "../components/Search";
 
 export default function Home() {
   return (
@@ -29,18 +26,9 @@ export default function Home() {
             La mas completa base de datos de peliculas de internet, busca tu
             favorita
           </Text>
-          <InputGroup width="80%">
-            <Input
-              placeholder="Buscar"
-              size="lg"
-              variant="outline"
-              borderRadius="14px"
-              mb="8"
-            />
-            <InputRightElement>
-              {<SearchIcon color="#f4364c" />}
-            </InputRightElement>
-          </InputGroup>
+          <Box width="80%">
+            <Search />
+          </Box>
           <Box m="10px">
             <Filter />
           </Box>
