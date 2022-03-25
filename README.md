@@ -14,7 +14,7 @@ Muvi is a page that lets you find the Top Rated movies in the market and also le
 ## How to run locally
 
 Clone the project, install node_modules (using npm install) 
-Create local file .env.local, and put your api key in a variable:NEXT_PUBLIC_KEY=<<your api key>> and run
+Create local file .env.local, and put your api key in a variable:NEXT_PUBLIC_KEY=<your api key> and run
 
 ```bash
 npm run dev

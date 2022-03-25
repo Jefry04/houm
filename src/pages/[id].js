@@ -25,15 +25,14 @@ const MovieDetail = () => {
   }, [id]);
 
   return (
-    <Container maxW="7xl">
+    <Container maxWidth="1280px">
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 0 }}
         py={{ base: 18, md: 24 }}
       >
-        <Flex>
+        <Flex  justifyContent="center">
           <Image
-            rounded="md"
             alt="movie image"
             src={`https://image.tmdb.org/t/p/w300${movieDetail.poster_path}`}
             align="center"
@@ -61,7 +60,7 @@ const MovieDetail = () => {
               <Text color="secondary" fontSize="2xl" fontWeight="300">
                 Puntuacion de usuarios: {movieDetail.vote_average}
               </Text>
-              <Text fontSize="lg">{movieDetail.overview}</Text>
+              <Text fontSize="lg" align="justify">{movieDetail.overview}</Text>
             </VStack>
           </Stack>
         </Stack>

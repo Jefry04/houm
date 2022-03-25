@@ -10,7 +10,7 @@ export const Filter = () => {
         px={4}
         fontSize="sm"
         borderRadius="25px"
-        bg="#FF452B"
+        bg="button"
         color="text"
         boxShadow={
           "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
@@ -28,7 +28,7 @@ export const Filter = () => {
         px={4}
         fontSize="sm"
         borderRadius="25px"
-        bg="#FF452B"
+        bg="button"
         color="text"
         boxShadow={
           "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
@@ -37,14 +37,16 @@ export const Filter = () => {
           bg: "hover",
         }}
       >
-        Otras
+        <Link href={"/upcoming"}>
+          <a>Proximos Estrenos</a>
+        </Link>
       </Button>
       <Button
         m="4px"
         px={4}
         fontSize="sm"
         borderRadius="25px"
-        bg="#FF452B"
+        bg="button"
         color="text"
         boxShadow={
           "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
@@ -53,7 +55,9 @@ export const Filter = () => {
           bg: "hover",
         }}
       >
-        latest movies
+        <Link href={"/topRated"}>
+          <a>Mejor Valoradas</a>
+        </Link>
       </Button>
     </>
   );

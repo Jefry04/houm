@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid, Flex } from "@chakra-ui/react";
+import { SimpleGrid, Flex, Text } from "@chakra-ui/react";
 
 import Cards from "../components/Cards";
 import { Pagination } from "../components/Pagination";
@@ -28,8 +28,11 @@ const ResultSearch = ({ searchResult, page, query }) => (
         </SimpleGrid>
       </>
     ) : (
-      //TODO  aviso de que no se encontro resultado
-      <h1>NO hay resultado</h1>
+      <>
+        <Text fontSize="3xl" color="primary" mt="10">
+          No se encuentra la pelicula
+        </Text>
+      </>
     )}
   </SimpleGrid>
 );

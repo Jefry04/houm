@@ -4,6 +4,7 @@ const theme = extendTheme({
   colors: {
     primary:"#616161",
     secondary:"#f4364c",
+    button:"#FF452B",
     text:"white",
     title:"#424242",
     hover:"rgb(178, 48, 30)"

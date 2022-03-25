@@ -1,24 +1,24 @@
 import React from "react";
 import Link from "next/link";
-import { Heading, Flex } from "@chakra-ui/react";
+import { Heading, Flex, Spacer, Box } from "@chakra-ui/react";
+import { Search } from "./Search";
 
 const Navbar = () => {
   return (
     <Flex
-      as="nav"
-      align="center"
-      justify="space-between"
-      wrap="wrap"
-      padding={6}
-      bg="white"
       borderRadius="12px"
       boxShadow="2xl"
+      alignItems="baseline"
     >
-      <Flex align="center" mr={5}>
+      <Box p="2" pt="5">
         <Heading as="h1" size="lg" letterSpacing={"tighter"} color="secondary">
           <Link href="/">MUVI</Link>
         </Heading>
-      </Flex>
+      </Box>
+      <Spacer />
+      <Box>
+        <Search />
+      </Box>
     </Flex>
   );
 };
