@@ -5,7 +5,7 @@ Muvi is a webpage created for a take-home assignment to join [Houm](https://houm
 
 The page is deployed here:
 
- <EL LINK A PAGINA>
+ https://houm-seven.vercel.app/
 
 ## About this proyect
 
