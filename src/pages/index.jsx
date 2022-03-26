@@ -1,16 +1,9 @@
 import React from "react";
-import {
-  SimpleGrid,
-  Box,
-  Flex,
-  Heading,
-  Text,
-} from "@chakra-ui/react";
+import { SimpleGrid, Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { Filter } from "../components/Filter";
 import { Search } from "../components/Search";
 
 export default function Home() {
-
   return (
     <>
       <SimpleGrid
@@ -30,9 +23,9 @@ export default function Home() {
           <Box width="80%">
             <Search />
           </Box>
-          <Box m="10px">
+          <Flex mr="10" direction={{ base: "column", sm: "row", md: "row" }}>
             <Filter />
-          </Box>
+          </Flex>
           <Text mt="16" fontSize="6xl" color="secondary">
             MUVI
           </Text>

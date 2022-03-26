@@ -16,7 +16,6 @@ const ResultSearch = ({ searchResult, page, query }) => (
             query={query}
           />
         </Flex>
-
         <SimpleGrid
           columns={{ sm: 2, md: 4 }}
           spacing="40px"
@@ -26,6 +25,13 @@ const ResultSearch = ({ searchResult, page, query }) => (
             <Cards moviesData={result} key={result.id} />
           ))}
         </SimpleGrid>
+        <Flex justifyContent="flex-end" p="4px">
+          <Pagination
+            page={page}
+            total_pages={searchResult.total_pages}
+            query={query}
+          />
+        </Flex>
       </>
     ) : (
       <>

@@ -31,13 +31,12 @@ const MovieDetail = () => {
         spacing={{ base: 8, md: 0 }}
         py={{ base: 18, md: 24 }}
       >
-        <Flex  justifyContent="center">
+        <Flex justifyContent="center">
           <Image
             alt="movie image"
             src={`https://image.tmdb.org/t/p/w300${movieDetail.poster_path}`}
             align="center"
             w="60%"
-            h={{ base: "100%", sm: "400px", lg: "400px" }}
             fallbackSrc="https://via.placeholder.com/150"
           />
         </Flex>
@@ -60,7 +59,9 @@ const MovieDetail = () => {
               <Text color="secondary" fontSize="2xl" fontWeight="300">
                 Puntuacion de usuarios: {movieDetail.vote_average}
               </Text>
-              <Text fontSize="lg" align="justify">{movieDetail.overview}</Text>
+              <Text fontSize="lg" align="justify">
+                {movieDetail.overview}
+              </Text>
             </VStack>
           </Stack>
         </Stack>
