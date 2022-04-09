@@ -3,7 +3,12 @@ import { useRouter } from "next/router";
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/react";
 
-export const Pagination = ({ page, total_pages, query }) => {
+export interface PaginationProps {
+  page:number;
+  total_pages?:number;
+  query?:String;
+}
+export const Pagination = ({ page, total_pages, query }: PaginationProps) => {
   const router = useRouter();
 
   return (

@@ -9,7 +9,6 @@ export default function Home() {
       <SimpleGrid
         maxWidth="1280px"
         m="auto"
-        direction="column"
         justifyItems="center"
       >
         <Flex mt="16" flexDirection="column" alignItems="center" width="68%">
